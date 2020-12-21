@@ -24,6 +24,7 @@ Caso apareça o erro...
 `WARNING: Error loading config file: /home/user/.docker/config.json - stat /home/user/.docker/config.json: permission denied`
 
 É possível que você já tenha utilizado alguma vez o Docker com este usuário, usando o sudo. Caso seja essa a situação, rode os comandos:
+
 ```
 sudo chown "$USER":"$USER" /home/"$USER"/.docker -R
 sudo chmod g+rwx "$HOME/.docker" -R
@@ -35,5 +36,3 @@ Então achei a solução em um post do AskUbuntu que se resume em rodar mais um 
 `sudo setfacl -m user:$USER:rw /var/run/docker.sock`
 
 Agora sim, tudo funciona! Se não der certo, reze teu pc mano
-
-#### Status do Projeto: Concluido :heavy_check_mark:
