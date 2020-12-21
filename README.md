@@ -1,6 +1,6 @@
 # Docker sem sudo
 
-Por utilizar o docker com grande frequência 0 criar comandos para coisas que não quero instalar no computador. Como assim?  Irá criar uma máquina virtual, aplicando um projeto, configurações diferenciadas. E a partir do shell script chamado entrypoint, coloco em um diretório /bin e não preciso mais me preocupar se esta instalado ou não! Veja o exemplo do script abaixo:
+Por utilizar o docker com grande frequência e por criar comandos para coisas que não quero instalar no computador. Como assim não instalar no computador? Cria-se uma máquina virtual, aplicando um projeto, configurações ou tem alguma peculiaridade diferenciada. E a partir do shell script chamado entrypoint, coloco em um diretório /bin e não preciso mais me preocupar se esta instalado ou não! Veja o exemplo do script abaixo:
 
 ```
 #!/bin/sh
